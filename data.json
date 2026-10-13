@@ -1,0 +1,242 @@
+[
+  {
+    "month": "2025-12",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1627215.0
+  },
+  {
+    "month": "2025-12",
+    "category": "駐點",
+    "headcount": 3,
+    "cost": 195020.0
+  },
+  {
+    "month": "2025-12",
+    "category": "約聘",
+    "headcount": 0,
+    "cost": 0.0
+  },
+  {
+    "month": "2025-12",
+    "category": "工讀",
+    "headcount": 0,
+    "cost": 0.0
+  },
+  {
+    "month": "2026-01",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 2313215.0
+  },
+  {
+    "month": "2026-01",
+    "category": "駐點",
+    "headcount": 3,
+    "cost": 196220.0
+  },
+  {
+    "month": "2026-01",
+    "category": "約聘",
+    "headcount": 0,
+    "cost": 0.0
+  },
+  {
+    "month": "2026-01",
+    "category": "工讀",
+    "headcount": 1,
+    "cost": 19240.0
+  },
+  {
+    "month": "2026-02",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1647215.0
+  },
+  {
+    "month": "2026-02",
+    "category": "駐點",
+    "headcount": 3,
+    "cost": 196220.0
+  },
+  {
+    "month": "2026-02",
+    "category": "約聘",
+    "headcount": 0,
+    "cost": 0.0
+  },
+  {
+    "month": "2026-02",
+    "category": "工讀",
+    "headcount": 2,
+    "cost": 37440.0
+  },
+  {
+    "month": "2026-03",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1626615.0
+  },
+  {
+    "month": "2026-03",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 367820.0
+  },
+  {
+    "month": "2026-03",
+    "category": "約聘",
+    "headcount": 0,
+    "cost": 0.0
+  },
+  {
+    "month": "2026-03",
+    "category": "工讀",
+    "headcount": 2,
+    "cost": 37440.0
+  },
+  {
+    "month": "2026-04",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1637415.0
+  },
+  {
+    "month": "2026-04",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 364120.0
+  },
+  {
+    "month": "2026-04",
+    "category": "約聘",
+    "headcount": 1,
+    "cost": 66025.0
+  },
+  {
+    "month": "2026-04",
+    "category": "工讀",
+    "headcount": 3,
+    "cost": 58240.0
+  },
+  {
+    "month": "2026-05",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1694915.0
+  },
+  {
+    "month": "2026-05",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 359220.0
+  },
+  {
+    "month": "2026-05",
+    "category": "約聘",
+    "headcount": 1,
+    "cost": 70225.0
+  },
+  {
+    "month": "2026-05",
+    "category": "工讀",
+    "headcount": 3,
+    "cost": 58240.0
+  },
+  {
+    "month": "2026-06",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1639215.0
+  },
+  {
+    "month": "2026-06",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 365420.0
+  },
+  {
+    "month": "2026-06",
+    "category": "約聘",
+    "headcount": 3,
+    "cost": 179260.0
+  },
+  {
+    "month": "2026-06",
+    "category": "工讀",
+    "headcount": 3,
+    "cost": 58240.0
+  },
+  {
+    "month": "2026-07",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1667215.0
+  },
+  {
+    "month": "2026-07",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 366620.0
+  },
+  {
+    "month": "2026-07",
+    "category": "約聘",
+    "headcount": 4,
+    "cost": 236090.0
+  },
+  {
+    "month": "2026-07",
+    "category": "工讀",
+    "headcount": 4,
+    "cost": 74880.0
+  },
+  {
+    "month": "2026-08",
+    "category": "正式",
+    "headcount": 20,
+    "cost": 1657315.0
+  },
+  {
+    "month": "2026-08",
+    "category": "駐點",
+    "headcount": 7,
+    "cost": 412995.0
+  },
+  {
+    "month": "2026-08",
+    "category": "約聘",
+    "headcount": 7,
+    "cost": 421855.0
+  },
+  {
+    "month": "2026-08",
+    "category": "工讀",
+    "headcount": 4,
+    "cost": 74880.0
+  },
+  {
+    "month": "2026-09",
+    "category": "正式",
+    "headcount": 19,
+    "cost": 1549505.0
+  },
+  {
+    "month": "2026-09",
+    "category": "駐點",
+    "headcount": 6,
+    "cost": 331720.0
+  },
+  {
+    "month": "2026-09",
+    "category": "約聘",
+    "headcount": 6,
+    "cost": 359910.0
+  },
+  {
+    "month": "2026-09",
+    "category": "工讀",
+    "headcount": 4,
+    "cost": 74880.0
+  }
+]

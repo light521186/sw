@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="給主管快速掌握每月團隊人力成本與組成的管理儀表板。">
+  <title>人力成本儀表板｜People Ops</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="rail" aria-label="主要導覽">
+    <a class="brand" href="#top" aria-label="People Ops 首頁"><img src="images/mark.svg" alt=""><span>p.</span></a>
+    <nav><a class="nav-item active" href="#overview" aria-label="總覽" title="總覽">◫</a><a class="nav-item" href="#insights" aria-label="分析" title="分析">⌁</a><a class="nav-item" href="#guide" aria-label="需求引導" title="需求引導">✳</a></nav>
+    <div class="rail-bottom"><span class="avatar">HR</span></div>
+  </aside>
+  <main id="top">
+    <header class="topbar"><div class="crumb">分析工具 <span>/</span> 人力成本</div><div class="top-actions"><span class="data-state"><i></i>資料已載入</span><button class="icon-button" id="helpButton" aria-label="需求引導" title="需求引導">?</button></div></header>
+    <section class="intro" id="overview">
+      <img class="intro-background" src="images/people-oil-painting.png" alt="" aria-hidden="true">
+      <div class="intro-shade"></div>
+      <div class="intro-copy"><div class="eyebrow"><span class="eyebrow-mark">✳</span> PEOPLE OPERATIONS <span class="eyebrow-line"></span> LEADERSHIP BRIEF</div><h1>人力成本<br><em>儀表板</em></h1><p class="lede">掌握團隊投入與每月成本，讓人力決策更有依據。</p><div class="hero-caption">TEAM NOTES <span>／</span> 團隊月報</div></div>
+      <div class="hero-stamp"><span>PEOPLE</span><b>＋</b><span>PROGRESS</span></div>
+    </section>
+    <section class="toolbar" aria-label="報表篩選"><div class="filter-group"><label for="monthSelect">分析月份</label><select id="monthSelect" aria-label="選擇分析月份"></select><span class="toolbar-divider"></span><label for="categorySelect">人員類別</label><select id="categorySelect"><option value="all">全部類別</option></select></div><div class="toolbar-right"><span class="currency-note">金額單位：新台幣</span><label class="upload-button" for="csvFile">↑ <span>更新彙總 CSV</span></label><input type="file" id="csvFile" accept=".csv,text/csv" hidden></div></section>
+    <section class="metrics" aria-label="重點指標"><article class="metric-card metric-primary"><div class="metric-head"><span>本月總人力成本</span><span class="metric-icon">＄</span></div><div class="metric-value" id="totalCost">—</div><div class="metric-foot"><span class="trend-pill" id="costTrend">—</span><span>較上月</span></div><div class="metric-spark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></article>
+      <article class="metric-card"><div class="metric-head"><span>在職人數</span><span class="metric-icon people-icon">♙</span></div><div class="metric-value" id="totalPeople">—<small> 人</small></div><div class="metric-foot"><span class="subtle-dot"></span><span id="peopleDetail">各類人員合計</span></div><div class="metric-decoration people-decoration">◎</div></article>
+      <article class="metric-card"><div class="metric-head"><span>人均月成本</span><span class="metric-icon">↗</span></div><div class="metric-value" id="avgCost">—</div><div class="metric-foot"><span class="subtle-dot"></span><span>總成本 ÷ 在職人數</span></div><div class="metric-decoration average-decoration">＋</div></article>
+      <article class="metric-card"><div class="metric-head"><span>成本最高類別</span><span class="metric-icon">◈</span></div><div class="metric-value category-value" id="topCategory">—</div><div class="metric-foot"><span class="trend-pill neutral-pill" id="topCategoryShare">—</span><span>佔本月總成本</span></div><div class="metric-decoration category-decoration">◌</div></article></section>
+    <section class="charts" id="insights"><article class="panel trend-panel"><div class="panel-heading"><div><span class="section-kicker">COST OVERVIEW</span><h2>人力成本趨勢</h2><p>每月支出走勢，及早掌握變化節點</p></div><div class="legend"><span><i class="legend-dot"></i>總人力成本</span><button class="chart-menu" aria-label="趨勢圖說明" title="金額單位：新台幣">···</button></div></div><div class="chart-formula"><span class="formula-label">計算方式</span><span>每月總人力成本 ＝ 該月份各人員類別「總人力成本」加總</span><small>資料來源：每月彙總統計.csv</small></div><div class="chart-wrap"><div class="y-axis" id="yAxis"></div><div class="trend-chart" id="trendChart" role="img" aria-label="各月人力成本趨勢圖"></div></div><div class="chart-foot"><span><i class="legend-dot"></i> 成本</span><span id="rangeLabel">—</span></div></article>
+      <article class="panel mix-panel"><div class="panel-heading"><div><span class="section-kicker">WORKFORCE MIX</span><h2>成本組成</h2><p>依人員類別查看本月結構</p></div><button class="chart-menu" aria-label="成本組成說明" title="以所選月份計算">···</button></div><div class="mix-content"><div class="donut-wrap"><div class="donut" id="donut"><div class="donut-center"><strong id="donutTotal">—</strong><span>本月成本</span></div></div></div><div class="mix-legend" id="mixLegend"></div></div><div class="mix-note"><span>✳</span><p>成本包含各人員類別的薪資、津貼及雇主負擔項目。</p></div></article></section>
+    <section class="guide-section" id="guide"><div class="guide-copy"><span class="section-kicker">LET'S MAKE IT YOURS</span><h2>先從你的問題開始。</h2><p>我是 AI 初學者也沒關係。選一個最想解決的問題，我會帶你一步一步設定儀表板。</p><div class="guide-progress"><span class="progress-dot active"></span><span class="progress-dot"></span><span class="progress-dot"></span><span class="progress-label" id="progressLabel">第 1 步，共 3 步</span></div></div><div class="guide-card"><div class="question-tag">Q<span id="questionNum">1</span></div><div class="guide-question" id="guideQuestion">你最想先看懂哪一件事？</div><div class="guide-options" id="guideOptions"></div><div class="guide-footer"><button class="back-button" id="backButton" disabled>← 上一步</button><button class="next-button" id="nextButton" disabled>下一步 <span>→</span></button></div></div></section>
+    <footer><div class="footer-brand"><img src="images/mark.svg" alt=""> People Ops <span>人力分析工具</span></div><span>以清楚的數據，支持更好的團隊決策。</span><span class="footer-date" id="updateNote">資料截至 —</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
